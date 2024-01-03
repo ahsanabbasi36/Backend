@@ -6,7 +6,13 @@ dotenv.config({
     path: './.env'
 })
 
-
+/*
+The connectDB() function is called, which presumably establishes a connection
+ to the MongoDB database. The connectDB() function returns a promise.
+If the connection to the database is successful, the then() block is executed
+Inside the then() block, the app.listen() function is called to start the
+ server.
+*/
 
 connectDB()
 .then(() => {
